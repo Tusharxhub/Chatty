@@ -10,7 +10,7 @@
 🚀 Live Demo
 Experience the application in action:
 
-🔗 *[Chatty App](https://chatty-liart.vercel.app)* – Live Preview
+🔗 *[Chatty App](Comming soon)* – Live Preview
 
 ---
 
