@@ -1,4 +1,4 @@
-# **💬 FullStack Chat App**  
+# **💬 Chatty - Real-Time Chat Application**  
 🚀 *A lightning-fast, real-time chat application with an elegant UI and seamless performance.*  
 
 <p align="center">
@@ -7,10 +7,9 @@
 
 ---
 
-🚀 Live Demo
-Experience the application in action:
-
-🔗 *[Chatty App](Comming soon)* – Live Preview
+🚀 **Live Demo**  
+Experience the application in action:  
+🔗 *[Chatty App](Coming soon)* – Live Preview  
 
 ---
 
@@ -46,8 +45,8 @@ Experience the application in action:
 
 1️⃣ Clone the repo:  
 ```sh
-git clone https://github.com/Tusharxhub/fullstack-chat-app-master.git
-cd fullstack-chat-app-master
+git clone https://github.com/Tusharxhub/Chatty.git
+cd Chatty
 ```
   
 2️⃣ Install dependencies:  
@@ -79,4 +78,4 @@ npm start
 
 ### **💥 Let's Build Something Amazing Together! 💥**  
 
-🔥 **[Fork Now](https://github.com/Tusharxhub/fullstack-chat-app-master/fork) & Start Contributing!** 🚀  
+🔥 **[Fork Now](https://github.com/Tusharxhub/Chatty/fork) & Start Contributing!** 🚀
