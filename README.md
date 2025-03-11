@@ -38,7 +38,7 @@ Experience the application in action:
 
 | ✨Sign up | 💬 Login | ⚙️ Setting |
 |------|------|------|
-| ![Sign up](https://github.com/Tusharxhub/fullstack-chat-app-master/blob/main/Sign%20up.png?raw=true) | ![Login](https://github.com/Tusharxhub/fullstack-chat-app-master/blob/main/Login.png?raw=true) | ![Setting](https://github.com/Tusharxhub/fullstack-chat-app-master/blob/main/Setting.png?raw=true) |
+| ![Sign up](https://github.com/Tusharxhub/Chatty/blob/main/Signup.png?raw=true) | ![Login](https://github.com/Tusharxhub/Chatty/blob/main/Login.png?raw=true) | ![Setting](https://github.com/Tusharxhub/Chatty/blob/main/Setting.png?raw=true) |
 
 ---
 
