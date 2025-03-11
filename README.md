@@ -2,7 +2,7 @@
 🚀 *A lightning-fast, real-time chat application with an elegant UI and seamless performance.*  
 
 <p align="center">
-  <img src="https://github.com/Tusharxhub/fullstack-chat-app-master/blob/main/logo.png?raw=true">
+  <img src="https://github.com/Tusharxhub/Chatty/blob/main/logo.png?raw=true">
 </p>
 
 ---
