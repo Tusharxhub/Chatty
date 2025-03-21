@@ -144,7 +144,7 @@ const SignUpPage = () => {
 
       {/* right side */}
       <AuthImagePattern
-        title="Tushar Kanti Dey"
+        title="Developed by Tushar Kanti Dey"
         subtitle={
           <div className="flex flex-col items-center space-y-2">
             <div className="flex space-x-4">
