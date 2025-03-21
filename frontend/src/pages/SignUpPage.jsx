@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
-import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare, User } from "lucide-react";
+import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare, User, Github, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
-
-import AuthImagePattern from "../components/AuthImagePattern";
 import toast from "react-hot-toast";
 
 const SignUpPage = () => {
@@ -22,15 +20,12 @@ const SignUpPage = () => {
     if (!/\S+@\S+\.\S+/.test(formData.email)) return toast.error("Invalid email format");
     if (!formData.password) return toast.error("Password is required");
     if (formData.password.length < 6) return toast.error("Password must be at least 6 characters");
-
     return true;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const success = validateForm();
-
     if (success === true) signup(formData);
   };
 
@@ -42,10 +37,7 @@ const SignUpPage = () => {
           {/* LOGO */}
           <div className="text-center mb-8">
             <div className="flex flex-col items-center gap-2 group">
-              <div
-                className="size-12 rounded-xl bg-primary/10 flex items-center justify-center 
-              group-hover:bg-primary/20 transition-colors"
-              >
+              <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                 <MessageSquare className="size-6 text-primary" />
               </div>
               <h1 className="text-2xl font-bold mt-2">Create Account</h1>
@@ -64,7 +56,7 @@ const SignUpPage = () => {
                 </div>
                 <input
                   type="text"
-                  className={`input input-bordered w-full pl-10`}
+                  className="input input-bordered w-full pl-10"
                   placeholder="Type here....."
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
@@ -82,7 +74,7 @@ const SignUpPage = () => {
                 </div>
                 <input
                   type="email"
-                  className={`input input-bordered w-full pl-10`}
+                  className="input input-bordered w-full pl-10"
                   placeholder="Type here....."
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -100,7 +92,7 @@ const SignUpPage = () => {
                 </div>
                 <input
                   type={showPassword ? "text" : "password"}
-                  className={`input input-bordered w-full pl-10`}
+                  className="input input-bordered w-full pl-10"
                   placeholder="••••••••"
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
@@ -110,11 +102,7 @@ const SignUpPage = () => {
                   className="absolute inset-y-0 right-0 pr-3 flex items-center"
                   onClick={() => setShowPassword(!showPassword)}
                 >
-                  {showPassword ? (
-                    <EyeOff className="size-5 text-base-content/40" />
-                  ) : (
-                    <Eye className="size-5 text-base-content/40" />
-                  )}
+                  {showPassword ? <EyeOff className="size-5 text-base-content/40" /> : <Eye className="size-5 text-base-content/40" />}
                 </button>
               </div>
             </div>
@@ -133,21 +121,36 @@ const SignUpPage = () => {
 
           <div className="text-center">
             <p className="text-base-content/60">
-              Already have an account?{" "}
-              <Link to="/login" className="link link-primary">
-                Sign in
-              </Link>
+              Already have an account? <Link to="/login" className="link link-primary">Sign in</Link>
             </p>
           </div>
         </div>
       </div>
 
-      {/* right side */}
-      <AuthImagePattern
-        title={<a href="https://github.com/Tusharxhub" className="link link-primary">Tusharxhub</a>}
-        subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
-      />
+      {/* right side with social links */}
+      <div className="flex flex-col justify-center items-center p-6 space-y-4">
+        <div className="flex space-x-4">
+          <a href="https://github.com/Tusharxhub" target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+            <Github className="size-5" />
+          </a>
+          <a href="https://www.linkedin.com/in/tushar-kanti-dey-86185b28b/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+            <Linkedin className="size-5" />
+          </a>
+          <a href="mailto:t.k.d.dey2033929837@gmail.com" className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+            <Mail className="size-5" />
+          </a>
+          <a href="https://www.instagram.com/tushardevx01/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+            <Instagram className="size-5" />
+          </a>
+        </div>
+      </div>
+
+      {/* Development by Tushar Kanti Dey */}
+      <div className="text-center mt-4">
+        <p className="text-base-content/60">Development by Tushar Kanti Dey</p>
+      </div>
     </div>
   );
 };
+
 export default SignUpPage;
