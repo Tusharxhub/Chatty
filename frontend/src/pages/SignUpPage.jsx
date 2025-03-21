@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
-import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare, User } from "lucide-react";
+import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare, User, Github, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 import AuthImagePattern from "../components/AuthImagePattern";
-import toast from "react-hot-toast";
 
 const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -143,12 +143,30 @@ const SignUpPage = () => {
       </div>
 
       {/* right side */}
-
       <AuthImagePattern
-        title="Join our community"
-        subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
+        title="Tushar Kanti Dey"
+        subtitle={
+          <div className="flex flex-col items-center space-y-2">
+            <div className="flex space-x-4">
+              <a href="https://github.com/Tusharxhub" target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+                <Github className="size-5" />
+              </a>
+              <a href="https://www.linkedin.com/in/tushar-kanti-dey-86185b28b/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+                <Linkedin className="size-5" />
+              </a>
+              <a href="mailto:t.k.d.dey2033929837@gmail.com" className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+                <Mail className="size-5" />
+              </a>
+              <a href="https://www.instagram.com/tushardevx01/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+                <Instagram className="size-5" />
+              </a>
+            </div>
+            <p className="text-base-content/60">Connect with friends, share moments, and stay in touch with your loved ones.</p>
+          </div>
+        }
       />
     </div>
   );
 };
+
 export default SignUpPage;
