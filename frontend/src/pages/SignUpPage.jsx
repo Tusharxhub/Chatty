@@ -128,6 +128,9 @@ const SignUpPage = () => {
       </div>
 
       {/* right side with social links */}
+      <div className="text-center mt-4">
+        <p className="text-base-content/60">Development by Tushar Kanti Dey</p>
+      </div>
       <div className="flex flex-col justify-center items-center p-6 space-y-4">
         <div className="flex space-x-4">
           <a href="https://github.com/Tusharxhub" target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
@@ -145,9 +148,9 @@ const SignUpPage = () => {
         </div>
       </div>
 
-      {/* Development by Tushar Kanti Dey */}
+      {/* Subtitle */}
       <div className="text-center mt-4">
-        <p className="text-base-content/60">Development by Tushar Kanti Dey</p>
+        <p className="text-base-content/60">Connect with friends, share moments, and stay in touch with your loved ones.</p>
       </div>
     </div>
   );
