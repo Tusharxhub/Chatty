@@ -52,9 +52,38 @@ cd Chatty
 2️⃣ Install dependencies:  
 ```sh
 npm install
+cd backend && npm install
+cd ../frontend && npm install
+cd ..
 ```
 
-3️⃣ Run the app:  
+3️⃣ Setup environment variables:  
+Create a `.env` file in the `backend` directory (use `backend/.env.example` as reference):  
+```sh
+cd backend
+cp .env.example .env
+```
+
+Edit the `.env` file with your credentials:
+- **MONGODB_URI**: Your MongoDB connection string
+- **JWT_SECRET**: A secure random string for JWT tokens
+- **CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET**: Your Cloudinary credentials
+- **PORT**: Server port (default: 5001)
+- **NODE_ENV**: development or production
+
+4️⃣ Run the app:  
+```sh
+# Run both frontend and backend in development mode
+# Terminal 1 - Backend
+cd backend
+npm run dev
+
+# Terminal 2 - Frontend
+cd frontend
+npm run dev
+```
+
+Or run backend only:
 ```sh
 npm start
 ```
